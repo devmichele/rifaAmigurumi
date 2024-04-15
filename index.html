@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <meta charset="utf-8" />
 <style>
   h1{
     font-size: 25px;
@@ -60,10 +62,19 @@ div{
     font-size: 15px;
 
 }
+.container{
+
+background-color: #cfeedf88; 
+}
+
+h1 {
+  text-align: center;
+  margin: 35px 0 20px 0 !important;
+}
 </style>
 </head>
 <body>
-  <div><h1> Rifa Amigurumi</h1></div>
+    <div><h1> Rifa Amigurumi</h1></div>
   <div>
   <img src="imag1.png"
   width="270px"
@@ -75,23 +86,29 @@ div{
    <div><h2>Chave Pix celular: 41 98464-3141</h2></div>
 
 
-   <div>
-    <form action="enviar_email.php" method="post">
-      <label for="nome">Nome:</label><br>
-      <input type="text" id="nome" name="nome" required><br><br>
+   <div class="container">
+    <h1>Enviar os números</h1>
+    <form target="_blank" action="https://formsubmit.co/491bbd1c594400e18c0aadf089fff4f0" method="POST">
+      <div class="form-group">
+        <div class="form-row">
+          <div class="col">
+            Nome: <input type="text" name="name" class="form-control" placeholder="Nome" required>
+          </div>
+          <div class="col">
+           E-mail: <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+          </div>
+        </div>
+          <div class="col">
+          Números: <input type="text" name="text" class="form-control" placeholder="Numeros escolhidos" required>
+         </div>
+      </div>
       
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-      
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-      
-      <input type="submit" value="Enviar">
-  </form>
-</form></div>
+      <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+    </form>
+  </div>
+
+
  <div><span class="b"></span>  Números disponíveis</div>
-
-
 <table>
   <tr>
     <td>1</td>
